@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/flash-cards/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/flash-cards/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/flash-cards",
+  "projects": {
+    "flash-cards": {
+      "type": "application",
+      "root": "apps/flash-cards",
+      "entryFile": "main",
+      "sourceRoot": "apps/flash-cards/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/flash-cards/tsconfig.app.json"
+      }
+    }
+  }
+}
+
